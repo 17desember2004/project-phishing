@@ -1,0 +1,13 @@
+stages:
+  preparation:
+    cmd: python src/prepare.py
+    deps:
+    - data/raw/phishing.csv
+    - src/prepare.py
+    outs:
+    - data/prepared/test.csv
+    - data/prepared/train.csv
+    - data/prepared/val.csv
+    - plots/01_distribusi_kelas.png
+    - plots/02_distribusi_fitur.png
+    - plots/03_korelasi_fitur.png
