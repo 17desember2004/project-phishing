@@ -1,0 +1,38 @@
+schema: '2.0'
+stages:
+  preparation:
+    cmd: python src/prepare.py
+    deps:
+    - path: data/raw/phishing.csv
+      hash: md5
+      md5: f3c27559e55c6c104e4d83857f0e7608
+      size: 54160642
+    - path: src/prepare.py
+      hash: md5
+      md5: 7e41dd967863e181a352ae4d147f0622
+      size: 5831
+    outs:
+    - path: data/prepared/test.csv
+      hash: md5
+      md5: 137f882c3e663b34174d3b10c76cd7f0
+      size: 7542164
+    - path: data/prepared/train.csv
+      hash: md5
+      md5: 532166f9f1cd2f481a15d37792b70a3c
+      size: 27152267
+    - path: data/prepared/val.csv
+      hash: md5
+      md5: f5346daa7bd703f98701ad46d135f428
+      size: 3017842
+    - path: plots/01_distribusi_kelas.png
+      hash: md5
+      md5: e8e4ed04025782bc04b364d8fe54db42
+      size: 54927
+    - path: plots/02_distribusi_fitur.png
+      hash: md5
+      md5: 459b7d49b6ee4e77f402455be044c876
+      size: 236859
+    - path: plots/03_korelasi_fitur.png
+      hash: md5
+      md5: debe12be22e022bd00c1c4df36dfee91
+      size: 60835
