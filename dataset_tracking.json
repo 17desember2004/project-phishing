@@ -1,0 +1,16 @@
+{
+    "sumber": "Kaggle / UCI Machine Learning Repository",
+    "nama_dataset": "PhiUSIIL Phishing URL Dataset",
+    "doi": "https://doi.org/10.1016/j.cose.2023.103545",
+    "tanggal_akses": "2026-04-21 15:33",
+    "total_baris": 235795,
+    "total_kolom_raw": 55,
+    "missing_values": 0,
+    "kelas_legitimate": 134850,
+    "kelas_phishing": 100945,
+    "kolom_dibuang": "['FILENAME', 'URL', 'Domain', 'TLD', 'Title']",
+    "total_fitur_X": 50,
+    "ukuran_train": 169772,
+    "ukuran_val": 18864,
+    "ukuran_test": 47159
+}
