@@ -1,0 +1,35 @@
+{
+    "baseline_val_f1": 0.9961,
+    "baseline_val_acc": 0.9955,
+    "val_accuracy": 0.9975,
+    "val_f1": 0.9978,
+    "val_auc": 0.9988,
+    "val_precision": 0.9962,
+    "val_recall": 0.9994,
+    "test_accuracy": 0.9977,
+    "test_f1": 0.998,
+    "test_auc": 0.9989,
+    "test_precision": 0.9968,
+    "test_recall": 0.9992,
+    "peningkatan_f1": 0.0017,
+    "confusion_matrix": {
+        "TP": 27217,
+        "FP": 87,
+        "FN": 22,
+        "TN": 19839
+    },
+    "n_features": 20,
+    "max_corr": 0.5332,
+    "overlap_train_test": 0,
+    "best_optuna_params": {
+        "learning_rate": 0.16436207648691262,
+        "num_leaves": 40,
+        "max_depth": 8,
+        "n_estimators": 441,
+        "min_child_samples": 64,
+        "subsample": 0.9388598102272082,
+        "colsample_bytree": 0.9070289978389517,
+        "reg_alpha": 0.9731649958496582,
+        "reg_lambda": 1.4335850329602733
+    }
+}
