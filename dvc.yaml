@@ -11,3 +11,10 @@ stages:
     - plots/01_distribusi_kelas.png
     - plots/02_distribusi_fitur.png
     - plots/03_korelasi_fitur.png
+  training:
+    cmd: python src/train.py
+    deps:
+    - data/prepared/train.csv
+    - src/train.py
+    outs:
+    - models/model.pkl

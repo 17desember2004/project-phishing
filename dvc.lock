@@ -9,21 +9,21 @@ stages:
       size: 54160642
     - path: src/prepare.py
       hash: md5
-      md5: 7e41dd967863e181a352ae4d147f0622
-      size: 5831
+      md5: c97ac52e905411da878d35f6924a7f05
+      size: 7304
     outs:
     - path: data/prepared/test.csv
       hash: md5
-      md5: 137f882c3e663b34174d3b10c76cd7f0
-      size: 7542164
+      md5: 5ff0aaaac439c0ce8920e286cdced81b
+      size: 7543205
     - path: data/prepared/train.csv
       hash: md5
-      md5: 532166f9f1cd2f481a15d37792b70a3c
-      size: 27152267
+      md5: b03cc8100070c22ac301f3ae5fae060f
+      size: 27152561
     - path: data/prepared/val.csv
       hash: md5
-      md5: f5346daa7bd703f98701ad46d135f428
-      size: 3017842
+      md5: eea6123d4f9e31f639b35742e71580ba
+      size: 3016507
     - path: plots/01_distribusi_kelas.png
       hash: md5
       md5: e8e4ed04025782bc04b364d8fe54db42
@@ -36,3 +36,19 @@ stages:
       hash: md5
       md5: debe12be22e022bd00c1c4df36dfee91
       size: 60835
+  training:
+    cmd: python src/train.py
+    deps:
+    - path: data/prepared/train.csv
+      hash: md5
+      md5: b03cc8100070c22ac301f3ae5fae060f
+      size: 27152561
+    - path: src/train.py
+      hash: md5
+      md5: 07a40ccaf1678632c0ab9ed92ce1b951
+      size: 16681
+    outs:
+    - path: models/model.pkl
+      hash: md5
+      md5: 67905c83a5ceac038aad7d6cd3935650
+      size: 934468
