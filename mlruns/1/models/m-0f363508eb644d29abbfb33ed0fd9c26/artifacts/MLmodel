@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/Hewlett-Packard/Desktop/project-phishing/mlruns/1/models/m-0f363508eb644d29abbfb33ed0fd9c26/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.11
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+mlflow_version: 3.11.1
+model_id: m-0f363508eb644d29abbfb33ed0fd9c26
+model_size_bytes: 353791
+model_uuid: m-0f363508eb644d29abbfb33ed0fd9c26
+prompts: null
+run_id: 5888a647c58f43e983b2b67646712bc9
+utc_time_created: '2026-05-01 13:12:03.213601'

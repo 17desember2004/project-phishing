@@ -1,0 +1,29 @@
+{
+    "baseline_val_f1": 0.9961,
+    "baseline_val_acc": 0.9955,
+    "test_accuracy": 0.9976,
+    "test_f1": 0.9979,
+    "test_auc": 0.999,
+    "test_precision": 0.9967,
+    "test_recall": 0.9992,
+    "peningkatan_f1": 0.0016,
+    "confusion_matrix": {
+        "TN": 19835,
+        "FP": 91,
+        "FN": 22,
+        "TP": 27217
+    },
+    "n_features": 20,
+    "max_corr": 0.5332,
+    "best_optuna_params": {
+        "learning_rate": 0.1351064769270363,
+        "num_leaves": 26,
+        "max_depth": 6,
+        "n_estimators": 493,
+        "min_child_samples": 51,
+        "subsample": 0.8267128546842717,
+        "colsample_bytree": 0.8165146016081297,
+        "reg_alpha": 0.023843008706597918,
+        "reg_lambda": 1.9408376192828847
+    }
+}
